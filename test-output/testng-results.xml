@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="6" failed="0" total="6" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="phpTravels Regression Suite" duration-ms="25330" started-at="2021-01-20T07:09:39Z" finished-at="2021-01-20T07:10:04Z">
+    <groups>
+    </groups>
+    <test name="Sanity Test Suite-chrome" duration-ms="25330" started-at="2021-01-20T07:09:39Z" finished-at="2021-01-20T07:10:04Z">
+      <class name="com.qa.phpTravels.Tests.RegisterPageTest">
+        <test-method status="FAIL" signature="setUp()[pri:0, instance:com.qa.phpTravels.Tests.RegisterPageTest@281e3708]" name="setUp" is-config="true" duration-ms="0" started-at="2021-01-20T12:39:39Z" finished-at="2021-01-20T12:39:39Z">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[Timed out waiting for driver server to start.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-2TN0UD4N', ip: '192.168.43.16', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: driver.version: ChromeDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: Timed out waiting for driver server to start.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-2TN0UD4N', ip: '192.168.43.16', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: driver.version: ChromeDriver
+	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:202)
+	at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:188)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:79)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:157)
+	at com.qa.phpTravels.Base.basePage.init_driver(basePage.java:50)
+	at com.qa.phpTravels.Tests.RegisterPageTest.setUp(RegisterPageTest.java:30)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:216)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:143)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:631)
+	at org.testng.TestRunner.run(TestRunner.java:599)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:368)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:363)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:321)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:270)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1284)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1209)
+	at org.testng.TestNG.runSuites(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1096)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://localhost:28173/status] to be available after 20001 ms
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:100)
+	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:197)
+	... 33 more
+Caused by: java.util.concurrent.TimeoutException
+	at java.util.concurrent.FutureTask.get(FutureTask.java:205)
+	at com.google.common.util.concurrent.SimpleTimeLimiter.callWithTimeout(SimpleTimeLimiter.java:156)
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:75)
+	... 34 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="setUp()[pri:0, instance:com.qa.phpTravels.Tests.loginPageTest@68ceda24]" name="setUp" is-config="true" duration-ms="0" started-at="2021-01-20T12:40:03Z" finished-at="2021-01-20T12:40:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="performnavigateToRegisterPage()[pri:1, instance:com.qa.phpTravels.Tests.RegisterPageTest@281e3708]" name="performnavigateToRegisterPage" duration-ms="5" started-at="2021-01-20T12:40:03Z" finished-at="2021-01-20T12:40:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- performnavigateToRegisterPage -->
+        <test-method status="SKIP" signature="fillRegistrationDetails(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.qa.phpTravels.Tests.RegisterPageTest@281e3708]" name="fillRegistrationDetails" duration-ms="0" started-at="2021-01-20T12:40:04Z" data-provider="getRegisterData" finished-at="2021-01-20T12:40:04Z">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[java.lang.NoClassDefFoundError: org/apache/xmlbeans/XmlOptions]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: java.lang.NoClassDefFoundError: org/apache/xmlbeans/XmlOptions
+	at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:45)
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:110)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:436)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1253)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:980)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1070)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:753)
+	at org.testng.TestRunner.run(TestRunner.java:607)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:368)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:363)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:321)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:270)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1284)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1209)
+	at org.testng.TestNG.runSuites(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1096)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
+Caused by: java.lang.NoClassDefFoundError: org/apache/xmlbeans/XmlOptions
+	at org.apache.poi.POIXMLDocumentPart.<clinit>(POIXMLDocumentPart.java:53)
+	at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:72)
+	at com.qa.phpTravels.util.excelUtil.getTestData(excelUtil.java:18)
+	at com.qa.phpTravels.Tests.RegisterPageTest.getRegisterData(RegisterPageTest.java:46)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:51)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:41)
+	... 22 more
+Caused by: java.lang.ClassNotFoundException: org.apache.xmlbeans.XmlOptions
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:371)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:363)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:362)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:418)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:355)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351)
+	... 33 more
+Caused by: java.util.zip.ZipException: invalid LOC header (bad signature)
+	at java.util.zip.ZipFile.read(Native Method)
+	at java.util.zip.ZipFile.access$1400(ZipFile.java:60)
+	at java.util.zip.ZipFile$ZipFileInputStream.read(ZipFile.java:734)
+	at java.util.zip.ZipFile$ZipFileInflaterInputStream.fill(ZipFile.java:434)
+	at java.util.zip.InflaterInputStream.read(InflaterInputStream.java:158)
+	at java.util.jar.Manifest$FastInputStream.fill(Manifest.java:476)
+	at java.util.jar.Manifest$FastInputStream.readLine(Manifest.java:410)
+	at java.util.jar.Manifest$FastInputStream.readLine(Manifest.java:444)
+	at java.util.jar.Attributes.read(Attributes.java:376)
+	at java.util.jar.Manifest.read(Manifest.java:234)
+	at java.util.jar.Manifest.<init>(Manifest.java:81)
+	at java.util.jar.Manifest.<init>(Manifest.java:73)
+	at java.util.jar.JarFile.getManifestFromReference(JarFile.java:200)
+	at java.util.jar.JarFile.getManifest(JarFile.java:181)
+	at sun.misc.URLClassPath$JarLoader$2.getManifest(URLClassPath.java:1012)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:451)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:74)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:369)
+	... 39 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fillRegistrationDetails -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.qa.phpTravels.Tests.RegisterPageTest@281e3708]" name="tearDown" is-config="true" duration-ms="0" started-at="2021-01-20T12:40:04Z" finished-at="2021-01-20T12:40:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.qa.phpTravels.Tests.loginPageTest@68ceda24]" name="tearDown" is-config="true" duration-ms="0" started-at="2021-01-20T12:40:04Z" finished-at="2021-01-20T12:40:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.phpTravels.Tests.RegisterPageTest -->
+      <class name="com.qa.phpTravels.Tests.loginPageTest">
+        <test-method status="SKIP" signature="verifyTitleTest()[pri:1, instance:com.qa.phpTravels.Tests.loginPageTest@68ceda24]" name="verifyTitleTest" duration-ms="100" started-at="2021-01-20T12:40:03Z" finished-at="2021-01-20T12:40:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTitleTest -->
+        <test-method status="SKIP" signature="verifyViewCartBtnTest()[pri:2, instance:com.qa.phpTravels.Tests.loginPageTest@68ceda24]" name="verifyViewCartBtnTest" duration-ms="4" started-at="2021-01-20T12:40:03Z" finished-at="2021-01-20T12:40:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyViewCartBtnTest -->
+        <test-method status="SKIP" signature="forgotPwdTest()[pri:3, instance:com.qa.phpTravels.Tests.loginPageTest@68ceda24]" name="forgotPwdTest" duration-ms="6" started-at="2021-01-20T12:40:04Z" finished-at="2021-01-20T12:40:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- forgotPwdTest -->
+        <test-method status="SKIP" signature="loginTest()[pri:4, instance:com.qa.phpTravels.Tests.loginPageTest@68ceda24]" name="loginTest" duration-ms="6" started-at="2021-01-20T12:40:04Z" finished-at="2021-01-20T12:40:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+      </class> <!-- com.qa.phpTravels.Tests.loginPageTest -->
+    </test> <!-- Sanity Test Suite-chrome -->
+  </suite> <!-- phpTravels Regression Suite -->
+</testng-results>

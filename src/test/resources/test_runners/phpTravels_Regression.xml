@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="phpTravels Regression Suite">
+
+
+	<listeners>
+		<listener class-name="com.qa.phpTravels.Listeners.ExtentReportListener" />
+	</listeners>
+
+	<test name="Sanity Test Suite-chrome" verbose="2">
+
+		<classes>
+			<class name="com.qa.phpTravels.Tests.loginPageTest" />
+			<class name="com.qa.phpTravels.Tests.RegisterPageTest" />
+		</classes>
+
+	</test>
+
+
+
+</suite> 

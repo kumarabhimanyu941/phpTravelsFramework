@@ -19,6 +19,7 @@ public class basePage {
 
 	public Properties prop;
 	public WebDriver driver;
+	public String browser;
 
 	/**
 	 * This method will initialize and load the properties from the
@@ -43,7 +44,14 @@ public class basePage {
 
 	public WebDriver init_driver(Properties prop) {
 
-		String browser = prop.getProperty("browser");
+		if (System.getenv("browser") != null && !System.getenv("browser").isEmpty()) {
+			browser = System.getenv(browser);
+		} else {
+			browser = prop.getProperty("browser");
+		}
+		
+	    prop.setProperty("browser", browser);
+
 		Boolean headless = Boolean.parseBoolean(prop.getProperty("headless"));
 
 		if (browser.equalsIgnoreCase("chrome")) {

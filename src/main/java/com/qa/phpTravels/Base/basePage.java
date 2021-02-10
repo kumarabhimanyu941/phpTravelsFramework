@@ -5,6 +5,7 @@ import java.io.FileInputStream;
 import java.util.Properties;
 
 import org.apache.commons.io.FileUtils;
+import org.apache.log4j.Logger;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -20,6 +21,7 @@ public class basePage {
 	public Properties prop;
 	public WebDriver driver;
 	public String browser;
+	public Logger log = Logger.getLogger("devpinoyLogger");
 
 	/**
 	 * This method will initialize and load the properties from the
@@ -33,6 +35,7 @@ public class basePage {
 		try {
 			FileInputStream ip = new FileInputStream("./src/main/java/com//qa/phpTravels/config/config.properties");
 			prop.load(ip);
+			log.debug("Config file loaded");
 		} catch (Exception e) {
 			e.printStackTrace();
 			System.out.println("Config file not found");
@@ -49,8 +52,8 @@ public class basePage {
 		} else {
 			browser = prop.getProperty("browser");
 		}
-		
-	    prop.setProperty("browser", browser);
+
+		prop.setProperty("browser", browser);
 
 		Boolean headless = Boolean.parseBoolean(prop.getProperty("headless"));
 
@@ -60,6 +63,7 @@ public class basePage {
 			if (headless) {
 				ChromeOptions co = new ChromeOptions();
 				driver = new ChromeDriver(co);
+				log.debug("chrome laumched");
 			} else {
 				driver = new ChromeDriver();
 			}
@@ -70,6 +74,7 @@ public class basePage {
 			if (headless) {
 				FirefoxOptions fo = new FirefoxOptions();
 				driver = new FirefoxDriver(fo);
+				log.debug("firefox launched");
 			} else {
 				driver = new FirefoxDriver();
 			}
